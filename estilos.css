@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body { /*crear nuevo cursor y cambiar*/
+    cursor: url(img/cursor-blanco.png), auto;
+}
+
+#botones-contacto a, .botonera ul li a  {
+    cursor: url(img/cursor-mano.png), auto;
+}
+
+/*INICIO HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.presentación {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* BOTONERA*/
+.botonera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+}
+
+nav ul {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+.botonera a:hover,
+ .boton-active {
+    color: #ffffff;
+    padding: 0.625rem 0rem;
+    border-bottom: 3px solid var(--5, #FFF);
+}
+
+.botonera ul li a { 
+    /* botones */
+    display: flex;
+    color: var(--1, #78B9F4);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.01875rem;
+    text-transform: uppercase;
+    padding: 0.625rem 0rem;
+    transition: 3s;
+}
+
+/* FIN BOTONERA*/
+
+body{
+    background-color:transparent;
+}
