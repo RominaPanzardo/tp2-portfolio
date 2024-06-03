@@ -8,55 +8,37 @@
     text-decoration: none;
 }
 
-body { /*crear nuevo cursor y cambiar*/
+body {
+    /*crear nuevo cursor y cambiar*/
     cursor: url(img/cursor-blanco.png), auto;
+    height: 100vh;
 }
 
-#botones-contacto a, .botonera ul li a  {
+#botones-contacto a,
+.botonera ul li a {
     cursor: url(img/cursor-mano.png), auto;
 }
 
 /*INICIO HEADER */
-header {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-header p {
-    font-size: 1em;
-    font-weight: 400;
-}
-
-.presentación {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 /* BOTONERA*/
 .botonera {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 30px 10%;
 }
 
 nav ul {
     padding: 30px;
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-    text-decoration: none;
+    justify-content: space-evenly;
 }
+
 .botonera a:hover,
- .boton-active {
+.boton-active {
     color: #ffffff;
     padding: 0.625rem 0rem;
     border-bottom: 3px solid var(--5, #FFF);
 }
 
-.botonera ul li a { 
+.botonera ul li a {
     /* botones */
     display: flex;
     color: var(--1, #78B9F4);
@@ -72,6 +54,51 @@ nav ul {
 
 /* FIN BOTONERA*/
 
-body{
-    background-color:transparent;
+/*footer*/
+footer{
+    padding: 20px;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/*HOBBIES*/
+/*galeria*/
+
+
+#pages-galeria {
+    background-color: #FFF;
+}
+
+.galeria {
+    width: 80%;
+    margin: auto;
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.galeria-item {
+    position: relative;
+    overflow-wrap: normal;
+
+}
+
+.galeria-item img {
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.galeria-item img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
 }
