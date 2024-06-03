@@ -1,49 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Romina Panzardo</title>
-        <link rel="icon" type="image/svg+xml" href="">
-        <link href="estilos.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
-            <nav class="botonera"> <!--------------agregar img logo---------->
-                <a href="index.html"><img src="img/" alt="logo" width="173px" height="28px"></a> 
-                <ul>
-                    <li><a href="trabajos.html">Trabajos</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-                <div class="presentación">
-                    <h3>Hola, yo soy</h3>
-                    <h1>Romina <br> Panzardo</h1>
-                    <h2>Diseñadora gráfica jr.</h2>
-                    <p>BUENOS AIRES, ARGENTINA</p>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Romina Panzardo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="botonera"> <!--------------agregar img logo---------->
+            <a href="index.html"><img src="img/" alt="logo" width="173px" height="28px"></a>
+            <ul>
+                <li><a href="trabajos.html">Trabajos</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div id="contenedor-portfolio ">
+            <div class="cartel-linea">
+                <div class="estrella-titulo">
+                    <img src="img/estrella-chica.svg" alt="estrella azul">
+                    <h3>Portfolio</h4>
+                </div>
+                <h3>2024</h3>
+            </div>
+            <div class="presentación" class="cartel-linea">
+                <h1>Romina <br> Panzardo</h1>
+                <h2>Diseñadora gráfica jr.</h2>
+            </div>
+        </div>
+    </header>
+    <!-----------MAIN------------>
+    <main>
+        <!--------------SECTION SOBRE MI----------->
+        <section id="sobre-mi">
+            <article class="cartel-blanco-azul">
+                <h4>Desde la pasión hasta la profesión</h4>
+                <p>Mi aventura en el diseño comenzó mucho antes de que pudiera identificarla como tal. De chica, ya
+                    era parte del mundo de las <span>manualidades</span>, creando manualidades con papel hasta
+                    complejos collages que contaban historias. La <span>edición de fotos</span> vino después, como
+                    un descubrimiento que amplió mi horizonte creativo.<br> Al estudiar <span>diseño gráfico</span>
+                    encuentro en cada proyecto una oportunidad para sumergirme en <span>nuevos
+                        desafíos</span>,explorar diferentes perspectivas y perfeccionar mis habilidad para
+                    <span>comunicar</span> como tambien mis<span>herramientas</span>.
+                </p>
+            </article>
+            <article>
+                <h2>Sobre mi</h2>
+                <div id="contenedor-imagen">
+                    <div>
+                        <img src="img/estrella-chica.svg" alt="estrella" width="116" height="116">
+                        <img src="img/estrella-chica.svg" alt="estrella" width="116" height="116">
+                    </div>
+
                 </div>
 
-        </header>
-        <!-----------MAIN------------>
-        <main>
-            <!--------------SECTION SOBRE MI----------->
-        <section id="sobre-mi">
-            <article class="información">
-                <h2>Sobre mi</h2>
-                <h3>Desde la pasión hasta la profesión</h3>
-                <p>Mi aventura en el diseño comenzó mucho antes de que pudiera identificarla como tal. De chica, ya era parte del mundo de las <span>manualidades</span>, creando manualidades con papel hasta complejos collages que contaban historias. La <span>edición de fotos</span> vino después, como un descubrimiento que amplió mi horizonte creativo.<br> Al estudiar <span>diseño gráfico</span> encuentro en cada proyecto una oportunidad para sumergirme en <span>nuevos desafíos</span>,explorar diferentes perspectivas y perfeccionar mis habilidad para <span>comunicar</span> como tambien mis<span>herramientas</span>. </p>
             </article>
-            <article id="img-romina"></article>
         </section>
-        </main>
+        <!--------------SECTION BABILIDADES----------->
+        <section id="habilidades">
+            <article>
+                <!--office-->
+                <div class="contenedor-programas">
+                    <div class="estrella-titulo">
+                        <img src="img/estrella-chica.svg" alt="estrella azul" width="29px" height="29px">
+                         <h4>Office</h4></div>
+                    </div>
+                    <ul class="programas">
+                        <li><img src="" alt="logo excel"></li>
+                        <li><img src="" alt="logo outlock"></li>
+                        <li><img src="" alt="logo powerpoint"></li>
+                        <li><img src="" alt="logo word"></li>
+                    </ul>
+                </div>
+               <!--adobe-->
+                <div class="contenedor-programas">
+                    <div class="estrella-titulo">
+                        <img src="img/estrella-chica.svg" alt="estrella azul" width="29px" height="29px">
+                         <h4>Adobe</h4></div>
+                    </div>
+                    <div>
+                        <ul class="programas">
+                            <li><img src="" alt="logo photoshop"></li>
+                            <li><img src="" alt="logo indesing"></li>
+                            <li><img src="" alt="logo lightroom"></li>
+                            <li><img src="" alt="logo indesing"></li>
+                        </ul>
+                    </div>
+                </div>
+                  <!--otros-->
+                  <div class="contenedor-programas">
+                    <div class="estrella-titulo">
+                        <img src="img/estrella-chica.svg" alt="estrella azul" width="29px" height="29px">
+                         <h4>Otros</h4></div>
+                    </div>
+                    <ul class="programas">
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                </div>
+            </article>
+        </section><!--------------SECTION CONTACTO---------->
+        <div>
+            <h5>contacto</h5>
+        </div>
+        <div id="contacto-hover">
+            <h5>contacto</h5>
+        </div>
+        <section>
 
-        <a href="#top" class="flecha-arriba"><img src="img/flecha.svg" alt="Volver arriba"></a><!--flecha de volver arriba-->
-        <!----------FIN MAIN------------>
-        <!-------footer--------->
-        <footer>
-            <p>Curriculum Vitae para Computación III</p>
-            <p>Copyright© 2024. Todos los derechos reservados.</p>
-        </footer>
-        <!------fin footer------>
-    </body>
+        </section>
+
+
+    </main>
+
+    <a href="#top" class="flecha-arriba"><img src="img/flecha.svg"
+            alt="Volver arriba"></a><!--flecha de volver arriba-->
+    <!----------FIN MAIN------------>
+    <!-------footer--------->
+    <footer>
+        <p>Curriculum Vitae para Computación III</p>
+        <p>Copyright© 2024. Todos los derechos reservados.</p>
+    </footer>
+    <!------fin footer------>
+</body>
+
 </html>
