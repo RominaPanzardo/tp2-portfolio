@@ -26,6 +26,7 @@ h2 {
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -160,7 +161,7 @@ body {
 }
 
 .botonera ul li a:hover,
-.boton-active a {
+.active {
     border: 2px solid #0026ff;
     color: #0026ff;
 }
@@ -234,16 +235,98 @@ footer {
     flex-wrap: wrap;
 }
 
-/*section contacto*/
-
 /* FIN INDEX*/
+
+/*TRABAJOS*/
+
+.portfolio {
+    display: flex;
+    height: 100vh;
+    padding: 50px;
+}
+
+#opciones-portfolio {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125rem;
+}
+
+
+.botones-portfolio {
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #01003F;
+    transition: all 0.3 ease;
+    width: 17rem;
+}
+
+.botones-portfolio:hover {
+    border-bottom: 2px solid #001AFF;
+}
+
+
+.botones-portfolio .estrella-titulo {
+    display: flex;
+    align-items: center;
+}
+
+
+.botones-portfolio .estrella-titulo h3 {
+    transition: color 0.3s ease;
+    margin-left: 0.5rem;
+}
+
+.botones-portfolio:hover .estrella-titulo h3 {
+    margin-left: 0.5rem;
+    color: #001AFF;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.botones-portfolio .estrella {
+    transition: all 0.3 ease;
+}
+
+.botones-portfolio:hover .estrella {
+    content: url(img/estrella-hover.svg);
+}
+
+.botones-portfolio .flecha {
+    transition: all 0.3s ease;
+    align-self: center;
+}
+
+.botones-portfolio:hover .flecha {
+    content: url('img/flecha-portfolio-hover.svg');
+}
+
+
+/*---portfolio imagen---*/
+
+
+
+
+.imagen-portfolio {
+    border: 3px solid #01003F;
+    width: 45.00681rem;
+    height: 39.0095rem;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+/*FIN TRABAJOS*/
 
 /*CONTACTO*/
 /*FIN CONTACTO*/
 
 
-/*TRABAJOS*/
-/*FIN TRABAJOS*/
+
 
 
 
@@ -338,7 +421,7 @@ form label {
 }
 
 
-.flecha {
+.flechaaaaa {
     display: flex;
     height: 106px;
     justify-content: center;
