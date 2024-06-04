@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="botonera"> <!--------------agregar img logo---------->
-           <a href="index.html"><img src="img/" alt="logo" width="173px" height="28px"></a> 
+            <a href="index.html"><img src="img/" alt="logo" width="173px" height="28px"></a>
             <ul>
                 <li><a href="trabajos.html">Trabajos</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
@@ -34,68 +34,71 @@
             <p>Si estás interesado en trabajar juntos o quieres saber más sobre mi proceso y cómo puedo ayudar a dar
                 vida a tus ideas, por favor, no dudes en contactarme..</p>
 
-                <div>
-                    
-                </div>
+            <div>
+
+            </div>
         </section>
         <section id="encuesta-mapa">
             <article id="encuesta-contenedor">
                 <h3>Detalles del proyecto</h3>
                 <form id="encuesta" method="post" enctype="text/plain"
                     action="mailto:”rominapanzardo.dg@gmail.com”?subject=Email enviado desde el formulario">
+                    <div class="columna">
+                        <div class="preguntas-encuesta">
+                            <label for="p1"> 1.Nombre</label>
+                            <input type="text" id="p1" name="p1" required>
+                        </div>
+                        <div class="preguntas-encuesta">
+                            <label for="p2"> 2.Email</label>
+                            <input type="text" id="p2" name="2" required>
+                        </div>
 
-                    <div class="preguntas-encuesta">
-                        <label for="p1"> 1.Nombre</label>
-                        <input type="text" id="p1" name="p1" required>
-                    </div>
-                    <div class="preguntas-encuesta">
-                        <label for="p2"> 2.Email</label>
-                        <input type="text" id="p2" name="2" required>
-                    </div>
+                        <div class="preguntas-encuesta">
+                            <label for="p3"> 3.¿Cuál es el objetivo de tu proyecto?</label>
+                            <input type="text" id="p3" name="p3">
+                        </div>
 
-                    <div class="preguntas-encuesta">
-                        <label for="p3"> 3.¿Cuál es el objetivo de tu proyecto?</label>
-                        <input type="text" id="p3" name="p3">
-                    </div>
-
-                    <div class="preguntas-encuesta">
-                        <label for="p4"> 4.¿Qué tipo de diseño necesitas? (Selecciona todos los que apliquen)</label>
-                        <div class="opciones-encuesta">
-                            <input type="checkbox" name="p4" id="p4a" value="Logo">
-                            <label for="p4">Logo</label>
-                            <input type="checkbox" name="p4" id="p4b" value="Branding completo">
-                            <label for="p4b">Branding completo</label>
-                            <input type="checkbox" name="p4" id="p4c" value="Diseño Web">
-                            <label for="p4c">Diseño Web</label>
-                            <input type="checkbox" name="p4" id="p4d" value="Packaging">
-                            <label for="p4d">Packaging</label>
-                            <input type="checkbox" name="p4" id="p4e" value="Diseño Web">
-                            <label for="p4e">Diseño Web</label>
-                            <label for="p4f">Otro</label>
-                            <input type="text" id="p4f" name="p4">
+                        <div class="preguntas-encuesta">
+                            <label for="p4"> 4.¿Cuál es la fecha limite para el proyecto?</label>
+                            <input type="date" id="p4" name="p4">
                         </div>
                     </div>
-                    <div class="preguntas-encuesta">
-                        <label for="p5"> 5.¿Cuál es la fecha limite para el proyecto?</label>
-                        <input type="date" id="p5" name="p5">
-                    </div>
-                    <div class="preguntas-encuesta">
-                        <label for="p6">6. Insertar información relevante del proyecto o cualquier consulta que quieras
-                            hacerme.</label>
-                        <textarea name="p6" id="p6"></textarea>
-                    </div>
+                    <div class="columna">
+                        <div class="preguntas-encuesta">
+                            <label for="p5"> 5.¿Qué tipo de diseño necesitas? (Selecciona todos los que
+                                apliquen)</label>
+                            <div class="opciones-encuesta">
+                                <input type="checkbox" name="p4" id="p5a" value="Logo">
+                                <label for="p5a">Logo</label>
+                                <input type="checkbox" name="p4" id="p5b" value="Branding completo">
+                                <label for="p5b">Branding completo</label>
+                                <input type="checkbox" name="p4" id="p5c" value="Diseño Web">
+                                <label for="p5c">Diseño Web</label>
+                                <input type="checkbox" name="p4" id="p5d" value="Packaging">
+                                <label for="p5d">Packaging</label>
+                                <input type="checkbox" name="p4" id="p5e" value="Diseño Web">
+                                <label for="p5e">Diseño Web</label>
+                                <label for="p5f">Otro</label>
+                                <input type="text" id="p5f" name="p5">
+                            </div>
+                        </div>
 
-                    <div class="preguntas-encuesta">
-                        <label for="p7">Por ultimo, carga algun archivo si lo consideras necesario.</label>
-                        <input type="file">
+                        <div class="preguntas-encuesta">
+                            <label for="p6">6. Insertar información relevante del proyecto o cualquier consulta que
+                                quieras
+                                hacerme.</label>
+                            <textarea name="p6" id="p6"></textarea>
+                        </div>
+
+                        <div class="preguntas-encuesta">
+                            <label for="p7">Por ultimo, carga algun archivo si lo consideras necesario.</label>
+                            <input type="file">
+                        </div>
                     </div>
-
-                    <div class="preguntas-encuesta">
-                        <input type="submit" name="Enviar" id="Enviar" placeholder="Enviar" required>
-                    </div>
-
-
                 </form>
+                <div class="contenedor-enviar">
+                    <input type="submit" name="Enviar" id="Enviar" placeholder="Enviar" required>
+                </div>
             </article>
             <article>
                 <h3>Coordinemos!</h3>

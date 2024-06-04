@@ -133,8 +133,7 @@ body {
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    padding: 30px 60px;
+    align-items: center;
 }
 
 
@@ -375,38 +374,55 @@ footer {
 
 #encuesta-mapa {
     display: flex;
-    justify-content: space-evenly;
-    gap: 4rem
+    gap: 4rem;
+    padding: 80px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 #encuenta-contenedor {
-    width: 50%;
+    width: 100%;
+    padding: 150px;
+    box-sizing: border-box;
 }
 
 form {
+    background: var(--1, #78B9F4);
+    border-radius: 1.875rem;
     padding: 30px;
     width: 100%;
-    border-radius: 1.875rem;
-    background: var(--1, #78B9F4);
+    max-width: 1280px;
     display: flex;
-    padding: 1.875rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2.3125rem;
+    color: var(--3, #01003F);
+    font-family: Inter;
+    font-size: 1.09725rem;
+    font-style: normal;
 }
 
 form label {
     padding: 20px 10px;
     display: flex;
+    padding: 0px 0px 10px
+}
+form input, textarea{
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+form .columna {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column; 
+    gap: 30px;
 }
 
 .preguntas-encuesta {
-    padding: 20px;
     display: flex;
-    width: 14.31906rem;
-    padding: 0.54863rem 1.09725rem;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .opciones-encuesta {
@@ -414,6 +430,7 @@ form label {
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .opciones-encuesta label {
