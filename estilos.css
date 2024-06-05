@@ -94,8 +94,7 @@ body {
 
 .cartel-linea {
     display: flex;
-    width: 100%;
-    padding: 0.625rem 1.625rem;
+    padding: 30px;
     justify-content: space-between;
     align-items: center;
     border: 3px solid var(--negro, #000);
@@ -196,6 +195,12 @@ footer {
 }
 
 /*-------------------------INDEX---------------------------------*/
+#contenedor-portfolio{
+    margin: 80px;
+}
+
+#cartel-linea
+
 /*section sobremi*/
 #sobre-mi {
     height: 100vh;
