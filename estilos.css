@@ -81,7 +81,7 @@ body {
 }
 
 
-/*CLASS*/
+/*------------------------CLASS-------------------------------*/
 /*---carteles---*/
 .cartel-blanco-azul {
     border-radius: 1.25rem;
@@ -367,9 +367,101 @@ footer {
 }
 
 /*Contacto*/
-#intro-contacto {
-    margin: auto;
+#contacto {
     width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#introduccion-contacto {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contenedor-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5.5rem;
+    padding: 30px 0px;
+
+}
+
+
+#cartel-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+#cartel-disponible {
+    border-radius: 3.75rem;
+    background: var(--3, #01003F);
+    display: flex;
+    padding: 0.625rem;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+#cartel-disponible p {
+    color: var(--2, #FFF);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+
+
+
+#cartel-y-flecha {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex-direction: column;
+}
+
+#info-contacto p {
+    color: #0026ff;
+    width: 27.5rem;
+}
+
+
+#reseñas {
+    background: #78B9F4;
+    width: 51.375rem;
+    padding: 10rem 5rem;
+}
+
+#cartel-reseña-general {
+    border-radius: 1.25rem;
+    background: #FFF;
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+#contenido-reseñas {
+    display: flex;
+    width: 31.9375rem;
+    align-items: center;
+    gap: 30px
+}
+
+.imagen-circular {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#promedio-estrellas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #encuesta-mapa {
@@ -404,7 +496,9 @@ form label {
     display: flex;
     padding: 0px 0px 10px
 }
-form input, textarea{
+
+form input,
+textarea {
     background-color: #fff;
     border-radius: 20px;
     border: none;
@@ -416,7 +510,7 @@ form .columna {
     padding: 20px;
     display: flex;
     box-sizing: border-box;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 30px;
 }
 
