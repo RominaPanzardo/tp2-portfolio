@@ -50,6 +50,13 @@ h4 {
     letter-spacing: 0.27rem;
 }
 
+h5 {
+    color: #01003F;
+    font-size: 1.2rem;
+    font-family: Inter;
+    font-weight: 400;
+}
+
 
 p {
     color: #01003F;
@@ -94,7 +101,7 @@ body {
 
 .cartel-linea {
     display: flex;
-    padding: 30px;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
     border: 3px solid var(--negro, #000);
@@ -106,61 +113,78 @@ body {
     gap: 0.875rem;
 }
 
+.contenedor-titulo-celeste {
+    background: #78B9F4;
+    display: flex;
+    width: 35rem;
+    height: 3rem;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.875rem;
+}
 
 
 
+.flecha-atras {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #01003F;
+    font-size: 1.2rem;
+    width: 5%;
+    padding: 0px 20px;
+
+
+}
+
+.borde-azul {
+    border: 3px solid #01003F;
+}
 
 /*--------------------------BOTONES---------------------------------*/
-.boton-azul {
-    color: #78B9F4;
-    border-radius: 1.25rem;
-    border: 3px solid var(--3, #01003F);
-    background: var(--3, #01003F);
-}
 
-.boton-azul p {
-    color: #78B9F4;
-}
 
 
 
 /*-------------------------HEADER---------------------------------*/
-/* botonera*/
-.botonera {
+/* nav*/
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
     width: 100%;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
     padding: 20px;
+}
+
+.botones {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 40%;
+
 }
 
-
-.botonera ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.botonera ul li a {
-
-    display: flex;
+nav ul li a{
+    color:  #01003F;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.01875rem;
     text-transform: uppercase;
-    cursor: pointer;
-    color: #78B9F4;
-    border-radius: 30px;
-    padding: 20px;
-    gap: 1rem;
-
-}
-
-.botonera ul li a:hover,
-.active {
-    border: 2px solid #0026ff;
-    color: #0026ff;
+    padding: 10px 0px;
+    border-bottom: 3px solid #01003F;
+    
 }
 
 /*presentacion*/
@@ -181,6 +205,14 @@ body {
     text-transform: uppercase;
 }
 
+#contenedor-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 50px;
+    gap: 20px;
+}
+
 
 
 /*-------------------------FOOTER---------------------------------*/
@@ -195,26 +227,24 @@ footer {
 }
 
 /*-------------------------INDEX---------------------------------*/
-#contenedor-portfolio{
-    margin: 80px;
-}
 
-#cartel-linea
+
+
 
 /*section sobremi*/
-#sobre-mi {
-    height: 100vh;
-    padding:20px;
+
+#intro-sobre-mi {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 4rem;
+    height: 100vh;
 }
 
 #recuadro-estrellas {
     position: relative;
     padding: 30px 0px;
 }
+
 #contenedor-imagen {
     width: 720px;
     height: 624px;
@@ -223,36 +253,70 @@ footer {
     background-size: cover;
     background-position: center;
 }
+
 .estrella {
     position: absolute;
 }
+
 #estrella-superior-derecha {
     top: 602px;
     right: 667px;
 }
+
 #estrella-inferior-izquierda {
     bottom: 602px;
     left: 667px;
 }
 
 /*section habilidades*/
-.contenedor-programas {
+#habilidades-aside {
+    padding: 30px 80px;
+    gap: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#habilidades {
+    gap: 30px 20px;
+    padding: 20px;
+}
+
+
+.contenedor-programas {
+    gap: 30px 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 1.875rem;
-    padding: 2rem;
     border: 3px solid #01003F;
     background: #FFF;
+
+
 }
 
 .programas {
     display: flex;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    gap: 0rem 0.23275rem;
-    flex-wrap: wrap;
+    gap: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+
+#contenedor-favoritos {
+    background-color: #78B9F4;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 40px;
+
 }
 
 /* FIN INDEX*/
@@ -494,6 +558,28 @@ form .columna {
 
 
 /*HOBBIES*/
+.boton-azul {
+
+    border-radius: 1.25rem;
+    background: var(--3, #01003F);
+    display: flex;
+    width: 35%;
+    padding: 0.9375rem;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.boton-azul a {
+    color: #78B9F4;
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.16875rem;
+    text-transform: uppercase;
+}
+
 /*FIN HOBBIES*/
 
 /*--------------galeria fotografia-------------------*/
