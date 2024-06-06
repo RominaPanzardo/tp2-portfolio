@@ -28,6 +28,7 @@ h2 {
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
+    padding-bottom: 30px;
 }
 
 h3 {
@@ -49,6 +50,7 @@ h4 {
     font-weight: 800;
     line-height: normal;
     letter-spacing: 0.27rem;
+    padding-bottom: 20px;
 }
 
 h5 {
@@ -110,7 +112,6 @@ body {
 
 .estrella-titulo {
     display: flex;
-    align-items: center;
     gap: 0.875rem;
 }
 
@@ -250,34 +251,40 @@ footer {
 
 #recuadro-estrellas {
     position: relative;
-    padding: 30px 0px;
 }
 
 #contenedor-imagen {
+    position: relative;
     width: 720px;
     height: 624px;
     border: 3px solid #01003F;
-    background-image: url();
+    background-image: url(img/foto-portfolio.jpg);
     background-size: cover;
     background-position: center;
+    filter: grayscale(100%);
+    
 }
-
+#contenedor-imagen:hover{
+    filter: grayscale(0%);
+    transition: 0.3s;
+}
 .estrella {
     position: absolute;
 }
 
 #estrella-superior-derecha {
-    top: 602px;
-    right: 667px;
+    top: 565px;
+    right: 662px;
 }
 
 #estrella-inferior-izquierda {
-    bottom: 602px;
-    left: 667px;
+    bottom: 564px;
+    left: 661px;
 }
 
 /*section habilidades*/
 #habilidades-aside {
+    height: 100vh;
     padding: 30px 80px;
     gap: 30px;
     display: flex;
@@ -290,6 +297,9 @@ footer {
     padding: 20px;
 }
 
+#recuadro-habilidades{
+    gap: 20px;
+}
 
 .contenedor-programas {
     gap: 30px 20px;
@@ -300,8 +310,6 @@ footer {
     border-radius: 1.875rem;
     border: 3px solid #01003F;
     background: #FFF;
-
-
 }
 
 .programas {
@@ -325,6 +333,36 @@ aside {
     justify-content: space-evenly;
     padding: 40px;
 
+}
+
+
+/*section contacto*/
+#index-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0026ff;
+    height: 100vh;
+}
+
+#index-contacto h2{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.96rem;
+}
+
+#index-contacto h2:hover{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 8rem;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.48rem;
+    transform: 4s;
 }
 
 /* FIN INDEX*/
