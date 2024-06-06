@@ -6,6 +6,7 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 /*tipografias*/
@@ -148,13 +149,16 @@ body {
 
 
 /*-------------------------HEADER---------------------------------*/
-/* nav*/
+/* ------------------nav-----------------------------------------*/
 nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
     width: 100%;
+
+
+
 }
 
 .botonera {
@@ -163,6 +167,7 @@ nav {
     align-items: center;
     width: 90%;
     padding: 20px;
+
 }
 
 .botones {
@@ -173,25 +178,28 @@ nav {
 
 }
 
-nav ul li a{
-    color:  #01003F;
+
+nav ul li a {
+    color: #01003F;
     font-family: Inter;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.01875rem;
     text-transform: uppercase;
-    padding: 10px 0px;
-    border-bottom: 3px solid #01003F;
-    
+
 }
 
-/*presentacion*/
-.presentación {
-    border: 3px solid #01003F;
-    padding: 2.75rem 8.9375rem 2.75rem 5.5rem;
+nav ul li a:hover,
+.active {
+    color: #0026ff;
+    padding: 10px 0px;
+    border-bottom: 4px solid #0026ff;
+}
 
+
+/*--------------------presentacion-------------------*/
+.presentación {
+    padding: 2.75rem 8.9375rem 2.75rem 5.5rem;
     gap: 1.6875rem;
 }
 
