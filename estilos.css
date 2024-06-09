@@ -444,6 +444,54 @@ aside {
     content: url('img/flecha-portfolio-hover.svg');
 }
 
+/*seccion de tps*/
+.recuadro-trabajos {
+    border: 2.509px solid #01003F;
+    display: flex;
+    width: 90.8125rem;
+    padding: 1.56844rem 1.56844rem 1.56844rem 5.07125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.77756rem;
+}
+
+.titulos-portfolio {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 1rem;
+    border-bottom: 3px solid #01003F;
+}
+
+.portada-descripcion{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+    gap:30px;
+}
+
+.portadas-trabajos {
+    width: 50%;
+    height: 50vh;
+    border-radius: 2px solid #000;
+}
+
+.cartel-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 1rem;
+    border: 1px solid #001AFF;
+    background-color: #78B9F4;
+}
+
+
+
 
 
 
@@ -635,7 +683,6 @@ form .columna {
 }
 
 /*FIN HOBBIES*/
-
 /*--------------galeria fotografia-------------------*/
 
 .flechas-galeria {
@@ -646,7 +693,8 @@ form .columna {
     background: #78B9F4;
 }
 
-.flechas-galeria:hover, .flechas-galeria:target{
+.flechas-galeria:hover,
+.flechas-galeria:target {
     background: #0026ff;
 }
 
@@ -750,6 +798,6 @@ form .columna {
     font-weight: 700;
 }
 
-.flecha-oculta{
+.flecha-oculta {
     opacity: 0;
 }
