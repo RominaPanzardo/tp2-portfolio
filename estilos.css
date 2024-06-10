@@ -92,6 +92,29 @@ body {
 }
 
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    gap: 20px;
+}
+
+footer p{
+    color: #01003F;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
 /*--------------------------CLASS---------------------------------*/
 /*---carteles---*/
 .cartel-blanco-azul {
@@ -464,13 +487,13 @@ aside {
     border-bottom: 3px solid #01003F;
 }
 
-.portada-descripcion{
+.portada-descripcion {
     display: flex;
     width: 80%;
     justify-content: space-between;
     align-items: flex-end;
     padding: 30px;
-    gap:30px;
+    gap: 30px;
 }
 
 .portadas-trabajos {
