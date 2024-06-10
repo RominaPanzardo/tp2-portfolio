@@ -328,10 +328,6 @@ footer {
     align-items: center;
 }
 
-#habilidades {
-    gap: 30px 20px;
-    padding: 20px;
-}
 
 #recuadro-habilidades {
     gap: 20px;
@@ -357,17 +353,28 @@ footer {
 aside {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 30px;
+    background-color: #78B9F4;
 }
 
-#contenedor-favoritos {
-    background-color: #78B9F4;
+#titulo-aside
+{
     display: flex;
-    gap: 20px;
+    width: 35rem;
+    height: 3rem;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+
+
+#contenedor-favoritos {
+    display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: 40px;
+    padding: 30px;
+    gap: 30px;
 
 }
 
@@ -480,12 +487,8 @@ aside {
 /*seccion de tps*/
 .recuadro-trabajos {
     border: 2.509px solid #01003F;
-    display: flex;
-    width: 90.8125rem;
-    padding: 1.56844rem 1.56844rem 1.56844rem 5.07125rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.77756rem;
+    width: 80%;
+    padding: 50px;
 }
 
 .titulos-portfolio {
