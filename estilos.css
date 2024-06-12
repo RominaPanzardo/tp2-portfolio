@@ -77,30 +77,6 @@ header h3 {
     cursor: url(img/cursor-mano.png), auto;
 }
 
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-    padding: 20px;
-}
-
-footer div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-    gap: 20px;
-}
-
-footer p {
-    color: #01003F;
-    font-family: Inter;
-    font-size: 0.75rem;
-    font-weight: 700;
-}
-
 /*************************** ESTILOS CLASS**************************/
 /*---flechas y botones---*/
 .flechas {
@@ -161,12 +137,29 @@ footer p {
     gap: 20px;
 }
 
-
-
 .borde-azul {
     border: 3px solid #01003F;
 }
 
+/***************************FOOTER**************************/
+
+footer {
+    padding: 20px;
+}
+
+.contenedor-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+footer p {
+    color: #0026ff;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
 
 /***************************HEADER**************************/
 /* ---------------nav-----------------*/
@@ -174,8 +167,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
-    width: 100%;
 }
 
 .botonera {
@@ -198,9 +189,7 @@ nav {
 
 nav ul li a {
     color: #01003F;
-    font-family: Inter;
-    font-size: 1.25rem;
-    font-style: normal;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -208,9 +197,10 @@ nav ul li a {
 nav ul li a:hover,
 .active {
     color: #0026ff;
-    padding: 10px 0px;
+    padding: 4px 0px;
     border-bottom: 4px solid #0026ff;
     cursor: pointer;
+    
 }
 
 /*--------------------presentacion-------------------*/
@@ -236,18 +226,6 @@ nav ul li a:hover,
     padding: 50px;
     gap: 20px;
     height: 100vh;
-}
-
-
-/***************************FOOTER**************************/
-footer {
-    padding: 20px;
-}
-
-.contenedor-footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
 }
 
 /*******************************************************INDEX***********************************************/
@@ -691,15 +669,15 @@ form .columna {
 .galeria-fotos {
     display: grid;
     grid-template-columns: repeat(6, 0fr);
-    justify-content: center;
-    gap: 20px;
-    padding-top: 30px;
+    justify-content: space-evenly;
+    gap: 15px;
 }
 
 .galeria-item {
     position: relative;
     overflow-wrap: normal;
     display: flex;
+    cursor: zoom-in;
 
 }
 
@@ -737,36 +715,30 @@ form .columna {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 30px;
+    gap: 20px;
 }
 
 .cartel-ubicacion-img {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border: 2px solid #01003F;
     background: #FFF;
-    padding: 10px 20px;
-    gap: 20px;
+    padding: 0px 10px;
+    gap: 10px;
 }
 
 .texto-ubicacion {
-    display: flex;
-    width: 315px;
-    justify-content: space-between;
-    flex-direction: column;
+    width: 260px;
     padding: 10px;
-    color: #01003F;
 }
 
 .texto-ubicacion h4 {
     color: #01003F;
     font-size: 1rem;
     text-transform: uppercase;
+    padding-bottom: 0px;
 }
 
 .texto-ubicacion p {
-    color: #01003F;
     font-size: 0.8rem;
     font-weight: 700;
 }
@@ -797,8 +769,14 @@ form .columna {
 
 
     body {
-        padding: 20px;
+        padding: 0px 20px;
     }
+
+
+/*footer*/
+.contenedor-footer{
+    flex-direction: column;
+}
 
     /*--------------1-index--------------*/
     /*header*/
@@ -856,6 +834,14 @@ form .columna {
     justify-content: space-evenly;
 }
 
+.light-box{
+    gap: 0;
+    padding: 10px; 
+}
+
+.contenedor-galeria-botones{
+    width: 550px;
+}
 
 /*--------------4.contacto--------------*/
 
