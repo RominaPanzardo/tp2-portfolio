@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Inter;
     font-style: normal;
     line-height: normal;
@@ -104,13 +104,13 @@ footer p {
 /*************************** ESTILOS CLASS**************************/
 /*---flechas y botones---*/
 .flechas {
-    border: 2px solid #01003F;
     background: #78B9F4;
     padding: 15px;
     cursor: pointer;
-    display: block;
     max-width: fit-content;
+    display: inline-flex;
 }
+
 .flecha-atras {
     display: flex;
     gap: 20px;
@@ -118,6 +118,15 @@ footer p {
     padding: 0px 16px;
     border-bottom: 1px solid #01003F;
 }
+
+
+.flecha-arriba {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
 
 /*---carteles---*/
 .cartel-blanco-azul {
@@ -225,6 +234,7 @@ nav ul li a:hover,
     align-items: stretch;
     padding: 50px;
     gap: 20px;
+    height: 100vh;
 }
 
 
@@ -372,6 +382,7 @@ aside {
     letter-spacing: 0.5rem;
     transition: 4s;
 }
+
 /*FIN INDEX*/
 /*******************************************************TRABAJOS***********************************************/
 .portfolio {
