@@ -10,12 +10,17 @@
     box-sizing: border-box;
 }
 
-/*tipografias*/
+body{
+    font-family: Inter;
+    font-style: normal;
+    line-height: normal;
+    cursor: url(img/cursor-blanco.png), auto;
+}
+
+/****************************ESTILOS TIPOGRAFIA**************************/
 h1 {
     color: #001AFF;
-    font-family: Inter;
     font-size: 8rem;
-    font-style: normal;
     font-weight: 900;
     line-height: 112%;
     text-transform: uppercase;
@@ -23,9 +28,7 @@ h1 {
 
 h2 {
     color: #001AFF;
-    font-family: Inter;
     font-size: 5rem;
-    font-style: normal;
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
@@ -33,23 +36,17 @@ h2 {
 }
 
 h3 {
-    color: #000;
-    font-family: Inter;
+    color: #01003F;
     font-size: 2rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     text-transform: uppercase;
 }
 
 
 h4 {
     color: #001AFF;
-    font-family: Inter;
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
     letter-spacing: 0.27rem;
     padding-bottom: 20px;
 }
@@ -57,18 +54,14 @@ h4 {
 h5 {
     color: #01003F;
     font-size: 1.2rem;
-    font-family: Inter;
     font-weight: 400;
 }
 
 
 p {
     color: #01003F;
-    font-family: Inter;
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     max-width: 34rem;
 }
 
@@ -78,14 +71,7 @@ header h3 {
 }
 
 
-
-body {
-    /*crear nuevo cursor y cambiar*/
-    cursor: url(img/cursor-blanco.png), auto;
-
-}
-
-/*cursor*/
+/****************************CURSOR**************************/
 #botones-contacto a,
 .botonera ul li a {
     cursor: url(img/cursor-mano.png), auto;
@@ -108,18 +94,15 @@ footer div {
     gap: 20px;
 }
 
-footer p{
+footer p {
     color: #01003F;
     font-family: Inter;
     font-size: 0.75rem;
     font-weight: 700;
 }
 
-/*--------------------------CLASS---------------------------------*/
-/*---carteles---*/
-
-
-
+/*************************** ESTILOS CLASS**************************/
+/*---flechas y botones---*/
 .flechas {
     border: 2px solid #01003F;
     background: #78B9F4;
@@ -128,13 +111,21 @@ footer p{
     display: block;
     max-width: fit-content;
 }
+.flecha-atras {
+    display: flex;
+    gap: 20px;
+    width: 130px;
+    padding: 0px 16px;
+    border-bottom: 1px solid #01003F;
+}
 
+/*---carteles---*/
 .cartel-blanco-azul {
-    border-radius: 1.25rem;
+    border-radius: 20px;
     border: 3px solid #01003F;
     background: #FFF;
-    padding: 2rem;
-    gap: 1.4375rem;
+    padding: 30px;
+    gap: 20px;
 
 }
 
@@ -148,52 +139,35 @@ footer p{
 
 .estrella-titulo {
     display: flex;
-    gap: 0.875rem;
+    gap: 20px;
 }
 
 .contenedor-titulo-celeste {
     background: #78B9F4;
     display: flex;
-    width: 35rem;
-    height: 3rem;
+    width: 560px;
+    height: 50px;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    gap: 0.875rem;
-}
-
-.flecha-atras {
-    display: flex;
-    align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #01003F;
-    font-size: 1.2rem;
-    width: 7%;
-    padding: 0px 16px;
-
-
 }
+
+
 
 .borde-azul {
     border: 3px solid #01003F;
 }
 
-/*--------------------------BOTONES---------------------------------*/
 
-
-
-
-/*-------------------------HEADER---------------------------------*/
-/* ------------------nav-----------------------------------------*/
+/***************************HEADER**************************/
+/* ---------------nav-----------------*/
 nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
     width: 100%;
-
-
-
 }
 
 .botonera {
@@ -210,7 +184,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 40%;
-
 }
 
 
@@ -221,7 +194,6 @@ nav ul li a {
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-
 }
 
 nav ul li a:hover,
@@ -231,11 +203,10 @@ nav ul li a:hover,
     border-bottom: 4px solid #0026ff;
 }
 
-
 /*--------------------presentacion-------------------*/
 .presentación {
-    padding: 2.75rem 8.9375rem 2.75rem 5.5rem;
-    gap: 1.6875rem;
+    width: 50%;
+    padding: 30px 0px;
 }
 
 .presentación h2 {
@@ -257,8 +228,7 @@ nav ul li a:hover,
 }
 
 
-
-/*-------------------------FOOTER---------------------------------*/
+/***************************FOOTER**************************/
 footer {
     padding: 20px;
 }
@@ -269,13 +239,8 @@ footer {
     padding: 20px;
 }
 
-/*-------------------------INDEX---------------------------------*/
-
-
-
-
-/*section sobremi*/
-
+/*******************************************************INDEX***********************************************/
+/*------------------section sobremi----------------------*/
 #intro-sobre-mi {
     display: flex;
     justify-content: space-evenly;
@@ -318,7 +283,7 @@ footer {
     left: 661px;
 }
 
-/*section habilidades*/
+/*-------------------section habilidades-------------------*/
 #habilidades-aside {
     height: 100vh;
     padding: 30px 80px;
@@ -339,7 +304,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 1.875rem;
+    border-radius: 30px;
     border: 3px solid #01003F;
     background: #FFF;
 }
@@ -356,18 +321,13 @@ aside {
     background-color: #78B9F4;
 }
 
-#titulo-aside
-{
+#titulo-aside {
     display: flex;
-    width: 35rem;
-    height: 3rem;
-    padding: 20px;
     justify-content: center;
     align-items: center;
-    gap: 0.875rem;
+    gap: 20px;
+    padding: 10px 0;
 }
-
-
 
 #contenedor-favoritos {
     display: flex;
@@ -379,7 +339,7 @@ aside {
 }
 
 
-/*section contacto*/
+/*-----------------section contacto------------------*/
 #index-contacto {
     display: flex;
     align-items: center;
@@ -399,7 +359,7 @@ aside {
     font-size: 8rem;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0.96rem;
+    letter-spacing: 1rem;
 }
 
 #index-contacto h2:hover {
@@ -409,14 +369,11 @@ aside {
     font-style: italic;
     font-weight: 900;
     line-height: normal;
-    letter-spacing: 0.48rem;
-    transform: 4s;
+    letter-spacing: 0.5rem;
+    transition: 4s;
 }
-
-/* FIN INDEX*/
-
-/*-------------------------TRABAJOS---------------------------------*/
-
+/*FIN INDEX*/
+/*******************************************************TRABAJOS***********************************************/
 .portfolio {
     display: flex;
     height: 100vh;
@@ -424,55 +381,45 @@ aside {
 }
 
 #opciones-portfolio {
-    padding: 20px 0px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 3.125rem;
+    gap: 60px;
 }
 
 
 .botones-portfolio {
+    width: 60%;
     display: flex;
-    padding: 0.5rem 0;
+    padding: 10px 0;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #01003F;
-    transition: all 0.3 ease;
-    width: 17rem;
+    border-bottom: 3px solid #01003F;
+    cursor: pointer;
 }
 
 .botones-portfolio:hover {
-    border-bottom: 2px solid #001AFF;
+    border-bottom: 3px solid #001AFF;
 }
 
-
-.botones-portfolio .estrella-titulo {
+.estrella-titulos-portfolio {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.botones-portfolio .estrella-titulos-portfolio {
+    display: flex;
     align-items: center;
 }
 
-
-.botones-portfolio .estrella-titulo h3 {
-    transition: color 0.3s ease;
-    margin-left: 0.5rem;
-}
-
-.botones-portfolio:hover .estrella-titulo h3 {
-    margin-left: 0.5rem;
+.botones-portfolio:hover .estrella-titulos-portfolio h3 {
+    transition: all 0.3s ease;
     color: #001AFF;
-    font-family: Inter;
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
 }
 
-.botones-portfolio .estrella {
-    transition: all 0.3 ease;
-}
-
-.botones-portfolio:hover .estrella {
+.botones-portfolio:hover .estrella-titulo {
     content: url(img/estrella-hover.svg);
+
 }
 
 .botones-portfolio .flecha {
@@ -482,13 +429,15 @@ aside {
 
 .botones-portfolio:hover .flecha {
     content: url('img/flecha-portfolio-hover.svg');
+    transition: all 0.3s ease;
 }
 
-/*seccion de tps*/
+/*--------------------seccion de tps-------------*/
 .recuadro-trabajos {
-    border: 2.509px solid #01003F;
+    border: 2.5px solid #01003F;
     width: 80%;
     padding: 50px;
+    background-color: #000;
 }
 
 .titulos-portfolio {
@@ -496,7 +445,7 @@ aside {
     width: 80%;
     padding: 20px;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 10px;
     border-bottom: 3px solid #01003F;
 }
 
@@ -512,7 +461,7 @@ aside {
 .portadas-trabajos {
     width: 50%;
     height: 50vh;
-    border-radius: 2px solid #000;
+    border: 2px solid #000;
 }
 
 .cartel-descripcion {
@@ -521,18 +470,13 @@ aside {
     align-items: flex-start;
     gap: 30px;
     padding: 20px;
-    border-radius: 1rem;
+    border-radius: 20px;
     border: 1px solid #001AFF;
     background-color: #78B9F4;
 }
 
-
-
-
-
-
 /*FIN TRABAJOS*/
-/*-------------------------CONTACTO---------------------------------*/
+/*******************************************************CONTACTO**********************************************/
 #contacto {
     width: 100%;
     height: 90vh;
@@ -560,16 +504,16 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 80px;
 }
 
 #cartel-disponible {
-    border-radius: 3.75rem;
+    border-radius: 60px;
     background: var(--3, #01003F);
     display: flex;
-    padding: 0.625rem;
+    padding: 15px;
     align-items: flex-end;
-    gap: 1rem;
+    gap: 15px;
 }
 
 #cartel-disponible p {
@@ -582,27 +526,27 @@ aside {
 #cartel-y-flecha {
     display: flex;
     align-items: center;
-    gap: 0.625rem;
+    gap: 10px;
     flex-direction: column;
 }
 
 #info-contacto p {
     color: #0026ff;
-    width: 27.5rem;
+    width: 440px;
 }
 
-
+/*-----------reseñas---------*/
 #reseñas {
     background: #78B9F4;
-    width: 51.375rem;
-    padding: 10rem 5rem;
+    width: 800px;
+    padding: 60px;
 }
 
 #cartel-reseña-general {
-    border-radius: 1.25rem;
+    border-radius: 20px;
     background: #FFF;
     display: flex;
-    padding: 1.25rem;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
     width: 500px;
@@ -610,9 +554,9 @@ aside {
 
 #contenido-reseñas {
     display: flex;
-    width: 31.9375rem;
+    width: 500px;
     align-items: center;
-    gap: 30px
+    gap: 30px;
 }
 
 .imagen-circular {
@@ -628,7 +572,7 @@ aside {
 
 #encuesta-mapa {
     display: flex;
-    gap: 4rem;
+    gap: 60px;
     padding: 80px;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -640,24 +584,22 @@ aside {
     box-sizing: border-box;
 }
 
-/*--------FORMULARIO------*/
+/*--------------formulario--------------*/
 form {
     background: var(--1, #78B9F4);
-    border-radius: 1.875rem;
+    border-radius: 30px;
     padding: 30px;
     width: 100%;
     max-width: 1280px;
     display: flex;
     color: var(--3, #01003F);
     font-family: Inter;
-    font-size: 1.09725rem;
+    font-size: 1rem;
     font-style: normal;
 }
 
 form label {
     padding: 20px 10px;
-    display: flex;
-    padding: 0px 0px 10px
 }
 
 form input,
@@ -694,15 +636,14 @@ form .columna {
     padding: 0px 10px;
 }
 
-
-/*HOBBIES*/
+/*FIN CONTACTO********************************************************HOBBIES***********************************************/
 .boton-azul {
 
-    border-radius: 1.25rem;
+    border-radius: 20px;
     background: var(--3, #01003F);
     display: flex;
     width: 35%;
-    padding: 0.9375rem;
+    padding: 15px;
     justify-content: space-around;
     text-decoration: none;
 }
@@ -718,14 +659,11 @@ form .columna {
     text-transform: uppercase;
 }
 
-/*FIN HOBBIES*/
-/*--------------galeria fotografia-------------------*/
+/*FIN HOBBIES*******************************************************GALERIA***********************************************/
 
 .flechas-galeria {
     display: inline-flex;
-    padding: 0.6rem;
-    align-items: flex-start;
-    gap: 0.6rem;
+    padding: 10px;
     background: #78B9F4;
 }
 
@@ -739,22 +677,18 @@ form .columna {
     background-color: #fff;
 }
 
-.galeria {
-    width: 70%;
-    margin: auto;
-}
-
 .galeria-fotos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 0fr);
+    justify-content: center;
     gap: 20px;
-    align-content: space-around;
-    justify-content: space-around;
+    padding-top: 30px;
 }
 
 .galeria-item {
     position: relative;
     overflow-wrap: normal;
+    display: flex;
 
 }
 
@@ -769,33 +703,30 @@ form .columna {
     transform: scale(1.05);
 }
 
-
+/*-------------VENTANA IMAGEN GRANDE------------*/
 .light-box {
     position: fixed;
     top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .9);
     width: 100%;
     height: 100vh;
-    z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: scale(0);
-    gap: 2rem;
+    gap: 30px;
 }
 
 .light-box:target {
     transform: scale(1);
 }
 
-
 /*interior de light-box*/
 .contenedor-galeria-botones {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 1.5rem;
+    gap: 30px;
 }
 
 .cartel-ubicacion-img {
@@ -808,20 +739,16 @@ form .columna {
     gap: 20px;
 }
 
-
 .texto-ubicacion {
     display: flex;
     width: 315px;
     justify-content: space-between;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 10px;
     color: #01003F;
-
 }
 
 .texto-ubicacion h4 {
-    gap: 0px;
-    padding: 0px;
     color: #01003F;
     font-size: 1rem;
     text-transform: uppercase;
@@ -829,11 +756,26 @@ form .columna {
 
 .texto-ubicacion p {
     color: #01003F;
-    font-family: Inter;
     font-size: 0.8rem;
     font-weight: 700;
 }
 
-.flecha-oculta {
-    opacity: 0;
+
+/****************************MEDIA QUERIES**************************/
+
+
+/*--------------1-index--------------*/
+/*--------------2-trabajos--------------*/
+/*--------------3-hobbies--------------*/
+/*--------------3.2-galeria--------------*/
+@media (max-width: 600px) {
+    .galeria-fotos {
+        grid-template-columns: repeat(2, 0fr);
+        justify-content: space-evenly;
+    }
+
+
 }
+
+
+/*--------------4.contacto--------------*/

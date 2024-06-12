@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta name="Description" content="galeria de imagenes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Panzardo Romina">
-    <meta name="Keywords" content="portfolio, diseño gráfico" type="text/css">
+    <meta name="Keywords" content="portfolio, diseño gráfico">
     <title>Romina Panzardo</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link href="estilos.css" rel="stylesheet" type="text/css">
@@ -17,13 +16,13 @@
 
 <body>
     <header>
-        <nav > <!--------------agregar img logo---------->
+        <nav >
             <div class="botonera">
                 <a href="index.html"><img src="img/" alt="logo" width="173px" height="50px"></a>
                 <ul class="botones">
-                    <li class="boton-invidividual"><a href="trabajos.html">Trabajos</a></li>
-                    <li class="boton-invidividual"><a href="hobbies.html">Hobbies</a></li>
-                    <li class="boton-invidividual"><a href="contacto.html" class="active" >Contacto</a></li>
+                    <li class="boton-individual"><a href="trabajos.html">Trabajos</a></li>
+                    <li class="boton-individual"><a href="hobbies.html">Hobbies</a></li>
+                    <li class="boton-individual"><a href="contacto.html" class="active" >Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -76,8 +75,7 @@
         <section id="encuesta-mapa">
             <article id="encuesta-contenedor">
                 <h3>Detalles del proyecto</h3>
-                <form id="encuesta" method="post" enctype="text/plain"
-                    action="mailto:”rominapanzardo.dg@gmail.com”?subject=Email enviado desde el formulario">
+                <form id="encuesta" method="post" enctype="text/plain" action="mailto:rominapanzardo.dg@gmail.com?subject=Email enviado desde el formulario">
                     <div class="columna">
                         <div class="preguntas-encuesta">
                             <label for="p1"> 1.Nombre</label>
@@ -85,7 +83,7 @@
                         </div>
                         <div class="preguntas-encuesta">
                             <label for="p2"> 2.Email</label>
-                            <input type="text" id="p2" name="2" required>
+                            <input type="email" id="p2" name="p2" required>
                         </div>
 
                         <div class="preguntas-encuesta">
@@ -94,7 +92,7 @@
                         </div>
 
                         <div class="preguntas-encuesta">
-                            <label for="p4"> 4.¿Cuál es la fecha limite para el proyecto?</label>
+                            <label for="p4">4.¿Cuál es la fecha límite para el proyecto?</label>
                             <input type="date" id="p4" name="p4">
                         </div>
                     </div>
@@ -103,18 +101,18 @@
                             <label for="p5"> 5.¿Qué tipo de diseño necesitas? (Selecciona todos los que
                                 apliquen)</label>
                             <div class="opciones-encuesta">
-                                <input type="checkbox" name="p4" id="p5a" value="Logo">
+                                <input type="checkbox" name="p5" id="p5a" value="Logo">
                                 <label for="p5a">Logo</label>
-                                <input type="checkbox" name="p4" id="p5b" value="Branding completo">
+                                <input type="checkbox" name="p5" id="p5b" value="Branding completo">
                                 <label for="p5b">Branding completo</label>
-                                <input type="checkbox" name="p4" id="p5c" value="Diseño Web">
+                                <input type="checkbox" name="p5" id="p5c" value="Diseño Web">
                                 <label for="p5c">Diseño Web</label>
-                                <input type="checkbox" name="p4" id="p5d" value="Packaging">
+                                <input type="checkbox" name="p5" id="p5d" value="Packaging">
                                 <label for="p5d">Packaging</label>
                                 <input type="checkbox" name="p4" id="p5e" value="Diseño Web">
                                 <label for="p5e">Diseño Web</label>
                                 <label for="p5f">Otro</label>
-                                <input type="text" id="p5f" name="p5">
+                                <input type="text" id="p5f" name="p5f">
                             </div>
                         </div>
 
@@ -126,8 +124,8 @@
                         </div>
 
                         <div class="preguntas-encuesta">
-                            <label for="p7">Por ultimo, carga algun archivo si lo consideras necesario.</label>
-                            <input type="file">
+                            <label for="p7">Por último, carga algún archivo si lo consideras necesario.</label>
+                            <input type="file" id="p7" name="p7">
                         </div>
                     </div>
                 </form>
