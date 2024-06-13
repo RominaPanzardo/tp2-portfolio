@@ -362,16 +362,18 @@ aside {
 /*******************************************************TRABAJOS***********************************************/
 .portfolio {
     display: flex;
-    height: 100vh;
-    padding: 50px;
+    height: 87vh;
+    padding: 49px;
+    position: relative;
+    flex-direction: column;
 }
 
 #opciones-portfolio {
     display: flex;
     flex-direction: column;
+    width: 35%;
     gap: 60px;
 }
-
 
 .botones-portfolio {
     width: 100%;
@@ -380,6 +382,7 @@ aside {
     justify-content: space-between;
     border-bottom: 3px solid #01003F;
     cursor: url(img/cursor-mano-azul.png), auto;
+    position: relative;
 }
 
 .botones-portfolio:hover {
@@ -405,7 +408,6 @@ aside {
 
 .botones-portfolio:hover .estrella-titulo {
     content: url(img/estrella-hover.svg);
-
 }
 
 .botones-portfolio .flecha {
@@ -416,6 +418,37 @@ aside {
 .botones-portfolio:hover .flecha {
     content: url('img/flecha-portfolio-hover.svg');
     transition: all 0.3s ease;
+}
+
+.imagen-tp-hover {
+    position: absolute;
+    border: 3px solid #0026ff;
+    transform: translate(100%, 0%);
+    width: 700px; 
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Cambia el contenido de la imagen según el botón sobre el que se hace hover */
+#boton-editorial:hover ~ .imagen-tp-hover {
+    opacity: 1;
+    content: url('img/trabajos/1-trabajo-editorial.jpg');
+}
+
+#boton-branding:hover ~ .imagen-tp-hover {
+    opacity: 1;
+    content: url('img/trabajos/2-trabajo-branding.jpg');
+}
+
+#boton-lettering:hover ~ .imagen-tp-hover {
+    opacity: 1;
+    content: url('img/trabajos/3-trabajo-lettering.jpg');
+}
+
+#boton-infografia:hover ~ .imagen-tp-hover {
+    opacity: 1;
+    content: url('img/trabajos/4-trabajo-editorial.jpg');
 }
 
 /*--------------------seccion de tps-------------*/
