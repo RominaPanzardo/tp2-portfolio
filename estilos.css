@@ -171,10 +171,12 @@ header h3 {
 
 /*---carteles---*/
 .cartel-blanco-azul {
+    display: flex;
     border-radius: 20px;
     border: 3px solid #01003F;
     padding: 30px;
-
+    gap: 20px;
+    flex-direction: column;
 }
 
 .cartel-linea {
@@ -261,6 +263,10 @@ nav ul li a:hover,
 
 }
 
+.logo:hover{
+    background-image: url(img/iconos/logo-hover.svg), auto;
+}
+
 /*--------------------presentacion-------------------*/
 .presentación {
     width: 50%;
@@ -302,15 +308,25 @@ nav ul li a:hover,
     font-size: 1.4rem;
 }
 
-
-
 #division-intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     width: 80%;
+}
 
+#imagen-hover-intro {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/iconos/flecha-portfolio-blanca.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#imagen-hover-intro:hover {
+    background-image: url('img/iconos/flecha-portfolio-azul.svg');
 }
 
 
@@ -418,14 +434,13 @@ aside {
 
 }
 
-
 /*-----------------section contacto------------------*/
 #index-contacto {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #0026ff;
-    height: 100vh;
+    height: 30vh;
 }
 
 #linea-contacto {
@@ -433,20 +448,18 @@ aside {
     border-bottom: 3px solid #fff;
 }
 
-#index-contacto h2 {
+#index-contacto h3 {
     color: #FFF;
     font-size: 8rem;
-    font-weight: 400;
-    letter-spacing: 1rem;
 }
 
-#index-contacto h2:hover {
+#index-contacto h3:hover {
     color: #FFF;
     font-size: 8rem;
     font-style: italic;
     font-weight: 900;
     letter-spacing: 0.5rem;
-    transition: 2s;
+    animation: scale-up-center 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite
 }
 
 /*FIN INDEX*/
@@ -628,10 +641,10 @@ aside {
 /*FIN TRABAJOS*/
 /*******************************************************CONTACTO**********************************************/
 #page-contacto {
-    
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #contacto {
@@ -639,6 +652,7 @@ aside {
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
+    height: 20%;
     margin: auto;
 }
 
@@ -694,8 +708,8 @@ aside {
 /*--------------formulario--------------*/
 
 #form-contenedor {
-    max-width: 1280px; 
-    margin: auto; 
+    max-width: 1280px;
+    margin: auto;
     padding: 20px;
 }
 
@@ -738,6 +752,23 @@ textarea {
     align-items: center;
     justify-content: space-around;
     height: 86vh;
+}
+
+#hobbies p {
+    font-size: 0.8rem;
+    max-width: 440px;
+}
+
+#hobbies h3 {
+    font-size: 0.8rem;
+    font-size: Inter;
+    font-weight: 800;
+}
+
+#hobbies h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 #hobbies-gral {
