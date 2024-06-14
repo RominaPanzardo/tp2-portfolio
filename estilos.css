@@ -166,7 +166,7 @@ footer p {
 
 /***************************HEADER**************************/
 /* ---------------nav-----------------*/
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -196,7 +196,7 @@ nav ul li a:hover,
     padding: 4px 0px;
     border-bottom: 4px solid #0026ff;
     cursor: url(img/cursor-mano-azul.png), auto;
-    
+
 }
 
 /*--------------------presentacion-------------------*/
@@ -360,19 +360,22 @@ aside {
 
 /*FIN INDEX*/
 /*******************************************************TRABAJOS***********************************************/
+
+#pages-galeria {
+    height: 80vh;
+}
+
 .portfolio {
-    display: flex;
-    height: 87vh;
-    padding: 49px;
+    height: 100vh;
+    padding: 50px 80px;
     position: relative;
-    flex-direction: column;
 }
 
 #opciones-portfolio {
+    gap: 35px;
     display: flex;
     flex-direction: column;
-    width: 35%;
-    gap: 60px;
+    justify-content: space-evenly;
 }
 
 .botones-portfolio {
@@ -395,11 +398,6 @@ aside {
     gap: 10px;
 }
 
-.botones-portfolio .estrella-titulos-portfolio {
-    display: flex;
-    align-items: center;
-}
-
 .botones-portfolio:hover .estrella-titulos-portfolio h3 {
     transition: all 0.3s ease;
     color: #001AFF;
@@ -412,7 +410,6 @@ aside {
 
 .botones-portfolio .flecha {
     transition: all 0.3s ease;
-    align-self: center;
 }
 
 .botones-portfolio:hover .flecha {
@@ -424,73 +421,116 @@ aside {
     position: absolute;
     border: 3px solid #0026ff;
     transform: translate(100%, 0%);
-    width: 700px; 
-    height: auto;
+    width: 700px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
 }
 
-/* Cambia el contenido de la imagen según el botón sobre el que se hace hover */
-#boton-editorial:hover ~ .imagen-tp-hover {
+/* HOVERS IMÁGENES- cambia según el botón */
+#boton-web:hover~.imagen-tp-hover {
+    opacity: 1;
+    content: url('img/trabajos/5-trabajo-web.jpg');
+}
+
+#boton-editorial:hover~.imagen-tp-hover {
     opacity: 1;
     content: url('img/trabajos/1-trabajo-editorial.jpg');
 }
 
-#boton-branding:hover ~ .imagen-tp-hover {
+#boton-branding:hover~.imagen-tp-hover {
     opacity: 1;
     content: url('img/trabajos/2-trabajo-branding.jpg');
 }
 
-#boton-lettering:hover ~ .imagen-tp-hover {
+#boton-lettering:hover~.imagen-tp-hover {
     opacity: 1;
     content: url('img/trabajos/3-trabajo-lettering.jpg');
 }
 
-#boton-infografia:hover ~ .imagen-tp-hover {
+#boton-infografia:hover~.imagen-tp-hover {
     opacity: 1;
     content: url('img/trabajos/4-trabajo-editorial.jpg');
 }
 
 /*--------------------seccion de tps-------------*/
+
+.contenedor-trabajos{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 30px;
+}
+
 .recuadro-trabajos {
     border: 2.5px solid #01003F;
-    width: 80%;
-    padding: 50px;
-}
-
-.titulos-portfolio {
-    display: flex;
-    width: 80%;
-    padding: 20px;
-    align-items: flex-start;
-    gap: 10px;
-    border-bottom: 3px solid #01003F;
-}
-
-.portada-descripcion {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    align-items: flex-end;
+    width: fit-content;
+    height: 90vh;
     padding: 30px;
-    gap: 30px;
+    overflow-y: auto;
 }
 
-.portadas-trabajos {
-    width: 50%;
-    height: 50vh;
+/*barra scroll vertical*/
+.recuadro-trabajos::-webkit-scrollbar {
+    width: 15px;
 }
 
-.cartel-descripcion {
+.recuadro-trabajos::-webkit-scrollbar-thumb {
+    background: #01003F;;
+    border-radius: 10px;
+}
+
+.recuadro-trabajos::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+
+#web-experiencia .recuadro-trabajos {
+    border: 2.5px solid #01003F;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    overflow: hidden;
+}
+
+
+.titulos-trabajos {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid #001AFF;
-    background-color: #78B9F4;
+    justify-content: space-evenly;
+    gap: 20px;
+    border-bottom: 3px solid #0026ff;
 }
+
+.titulos-trabajos h4{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.explicacion-trabajo{
+    padding: 20px 0px;
+    gap: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.contenedor-info{
+    color: #001AFF;
+    border: 2px solid #001AFF;
+    width: 200px;
+    padding: 15px;
+}
+
+.contenedor-info p {
+    font-size: 0.8rem;
+}
+
+.imagenes-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    
+    gap: 15px;
+}
+
 
 /*FIN TRABAJOS*/
 /*******************************************************CONTACTO**********************************************/
@@ -788,13 +828,19 @@ form .columna {
     }
 
 
-/*footer*/
-.contenedor-footer{
-    flex-direction: column;
-}
+    /*footer*/
+    .contenedor-footer {
+        flex-direction: column;
+        width: 100%;
+    }
 
     /*--------------1-index--------------*/
     /*header*/
+
+    nav {
+        opacity: 0;
+    }
+
     #contenedor-portfolio {
         display: flex;
         gap: 20px;
@@ -802,29 +848,36 @@ form .columna {
         height: 100vh;
         flex-direction: column;
         margin: 20px;
-        
+
     }
 
     .presentación {
         width: 100%;
     }
+
     .presentación h2 {
         font-size: 2.5rem;
     }
 
     /*main---sobre mi----*/
-    main{
+    main {
         margin: 20px;
     }
+
     #intro-sobre-mi {
         flex-direction: column-reverse;
         align-items: stretch;
         gap: 30px;
     }
 
-    #contenedor-imagen{
+    #contenedor-imagen {
         width: auto;
         height: 400px;
+    }
+
+    #estrella-inferior-izquierda,
+    #estrella-superior-derecha {
+        opacity: 0;
     }
 
     /*habilidades*/
@@ -837,35 +890,31 @@ form .columna {
         height: 220px;
     }
 
-    #index-contacto h2{
+    #index-contacto h2 {
         font-size: 3.6rem;
     }
 
+    .flecha-arriba {
+        opacity: 0;
+    }
+
     /*--------------2-trabajos--------------*/
-/*--------------3-hobbies--------------*/
-/*--------------3.2-galeria--------------*/
-.galeria-fotos {
-    grid-template-columns: repeat(2, 0fr);
-    justify-content: space-evenly;
+    /*--------------3-hobbies--------------*/
+    /*--------------3.2-galeria--------------*/
+    .galeria-fotos {
+        grid-template-columns: repeat(2, 0fr);
+        justify-content: space-evenly;
+    }
+
+    .light-box {
+        gap: 0;
+        padding: 10px;
+    }
+
+    .contenedor-galeria-botones {
+        width: 550px;
+    }
+
+    /*--------------4.contacto--------------*/
+
 }
-
-.light-box{
-    gap: 0;
-    padding: 10px; 
-}
-
-.contenedor-galeria-botones{
-    width: 550px;
-}
-
-/*--------------4.contacto--------------*/
-
-}
-
-
-
-
-
-
-
-
