@@ -659,7 +659,7 @@ aside {
 /*FIN TRABAJOS*/
 /*******************************************************CONTACTO**********************************************/
 #page-contacto {
-    height: 85vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -769,7 +769,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 86vh;
+    height: 88vh;
 }
 
 #hobbies p {
@@ -870,6 +870,7 @@ textarea {
     grid-template-columns: repeat(6, 0fr);
     justify-content: center;
     gap: 15px;
+    height: 85vh;
 }
 
 .galeria-item {
@@ -945,197 +946,208 @@ textarea {
 
 
 /****************************MEDIA QUERIES**************************/
+
 @media screen and (max-width: 600px) {
 
-    @media screen and (max-width: 600px) {
-
-        #texto-intro h1{
-            font-size: 6rem;
-            padding-bottom: 20px;
-        }
-
-        #texto-intro h2{
-            font-size: 4.5rem;
-            padding-bottom: 20px;
-        }
-
-
-        h3 {
-            font-size: 3rem;
-        }
-
-        h4 {
-            font-size: 2.5rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-
-
-        header h3 {
-            font-size: 2rem;
-        }
-
-        .ocultar-en-responsive {
-            display: none;
-        }
-
-        .scale-up-center {
-            height: 200px;
-        }
-
-        #contenedor-portfolio {
-            padding: 30px;
-            height: 100vh;
-        }
-
-        #cartel-linea-intro {
-            width: 100%;
-            padding: 10px;
-            flex-direction: column;
-            height: fit-content;
-        }
-
-        #cartel-linea-intro h3 {
-            color: #fff;
-            font-size: 2rem;
-        }
-
-
-        #division-intro {
-            flex-direction: column;
-            gap: 20px;
-            width: 100%;
-        }
-        #texto-intro{
-            gap:40px;
-        }
-
-
-        #imagen-hover-intro {
-            width: 50px;
-            height: 50px;
-        }
-
-        #intro-sobre-mi {
-            padding: 20px;
-            flex-direction: column-reverse;
-        }
-
-        #recuadro-estrellas {
-            width: 100%;
-        }
-
-        div #contenedor-imagen {
-            width: 100%;
-            height: 400px;
-
-        }
-
-
-        #contenedor-imagen {
-            width: 100%;
-            height: auto;
-            min-height: 200px;
-
-        }
-
-        #habilidades {
-            flex-direction: column;
-            padding: 20px;
-            height: auto;
-        }
-
-        #habilidades-aside {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-
-        .estrella-titulo {
-            display: flex;
-            gap: 20px;
-            
-            align-items: center;
-           
-        }
-
-        .contenedor-programas {
-            flex-direction: column;
-            gap: 10px;
-            padding: 10px;
-        }
-
-        .programas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-
-        }
-
-        aside {
-            padding: 20px;
-        }
-
-        #contenedor-favoritos {
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        #index-contacto {
-            height: auto;
-            padding: 20px;
-        }
-
-        #index-contacto h3 {
-            font-size: 3rem;
-        }
-
-        .ocultar-en-responsive {
-            display: none;
-        }
-
-        .botones {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .boton-individual {
-            text-align: center;
-        }
-
-        nav {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #flecha-volver {
-            display: none;
-        }
-    }
-    /*--------------3.2-galeria--------------*/
-    .galeria-fotos {
-        grid-template-columns: repeat(2, 0fr);
-        justify-content: space-evenly;
+    #texto-intro h1 {
+        font-size: 6rem;
+        padding-bottom: 20px;
     }
 
-    .light-box {
-        gap: 0;
+    #texto-intro h2 {
+        font-size: 4.5rem;
+        padding-bottom: 20px;
+    }
+
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+
+    header h3 {
+        font-size: 2rem;
+    }
+
+    .ocultar-en-responsive {
+        display: none;
+    }
+
+    .scale-up-center {
+        height: 200px;
+    }
+
+    #contenedor-portfolio {
+        padding: 30px;
+        height: 100vh;
+        gap: 20px;
+    }
+
+    #cartel-linea-intro {
+        width: 100%;
         padding: 10px;
+        flex-direction: column;
+        height: fit-content;
     }
 
-    .contenedor-galeria-botones {
+    #cartel-linea-intro h3 {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+
+    #division-intro {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    #texto-intro {
+        gap: 40px;
+    }
+
+
+    #imagen-hover-intro {
+        width: 50px;
+        height: 50px;
+    }
+
+    #intro-sobre-mi {
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+
+    #recuadro-estrellas {
         width: 550px;
     }
 
 
+    div #contenedor-imagen {
+        width: 100%;
+        height: 400px;
+    }
+
+
+    #contenedor-imagen {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+
+    }
+
+    #habilidades {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    #habilidades-aside {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .estrella-titulo {
+        display: flex;
+        gap: 20px;
+
+        align-items: center;
+
+    }
+
+    .contenedor-programas {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .programas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+    }
+
+    aside {
+        padding: 20px;
+    }
+
+    #contenedor-favoritos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #index-contacto {
+        height: 30vh;
+        padding: 20px;
+    }
+
+    #index-contacto h3 {
+        font-size: 3rem;
+    }
+
+    .ocultar-en-responsive {
+        display: none;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .boton-individual {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+    #flecha-volver {
+        display: none;
+    }
+
+    /*--------------3.2-galeria--------------*/
+.galeria-fotos {
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: space-evenly;
+}
+
+.light-box {
+    gap: 0;
+    padding: 10px;
+}
+
+.contenedor-galeria-botones {
+    width: 550px;
+}
 
 }
 
-    /*--------------2-trabajos--------------*/
-    /*--------------3-hobbies--------------*/
 
-    /*--------------4.contacto--------------*/
+
+
+
+
+/*--------------2-trabajos--------------*/
+/*--------------3-hobbies--------------*/
+
+/*--------------4.contacto--------------*/
