@@ -949,9 +949,14 @@ textarea {
 
     @media screen and (max-width: 600px) {
 
-        #texto-intro h1,
-        #texto-intro h2 {
+        #texto-intro h1{
+            font-size: 6rem;
+            padding-bottom: 20px;
+        }
+
+        #texto-intro h2{
             font-size: 4.5rem;
+            padding-bottom: 20px;
         }
 
 
@@ -988,6 +993,8 @@ textarea {
         #cartel-linea-intro {
             width: 100%;
             padding: 10px;
+            flex-direction: column;
+            height: fit-content;
         }
 
         #cartel-linea-intro h3 {
