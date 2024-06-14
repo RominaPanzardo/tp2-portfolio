@@ -509,7 +509,7 @@ aside {
     gap: 20px;
     display: flex;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .contenedor-info{
