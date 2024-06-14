@@ -1116,10 +1116,6 @@ textarea {
             display: none;
         }
     }
-}
-
-    /*--------------2-trabajos--------------*/
-    /*--------------3-hobbies--------------*/
     /*--------------3.2-galeria--------------*/
     .galeria-fotos {
         grid-template-columns: repeat(2, 0fr);
@@ -1134,5 +1130,12 @@ textarea {
     .contenedor-galeria-botones {
         width: 550px;
     }
+
+
+
+}
+
+    /*--------------2-trabajos--------------*/
+    /*--------------3-hobbies--------------*/
 
     /*--------------4.contacto--------------*/
