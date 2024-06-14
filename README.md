@@ -6,8 +6,8 @@ El editor de código utilizado fue Visual Studio Code.
 
 Se buscó estructurar el portfolio en diferentes html para garantizar una navegación clara y accesible a través de un mavegador que ofrece botones que permiten moverse fácilmente entre las diferente secciones. Estas son:
 
-###Link a figma: ### 
-https://www.figma.com/design/WK1WXK7ULTz1zqrW1Tc6Rn/tp2_panzardo_romina.?node-id=707-570&t=NFThRRhNjMhsPX5c-1
+### Link a figma: ### 
+[https://www.figma.com/design/WK1WXK7ULTz1zqrW1Tc6Rn/tp2_panzardo_romina.?node-id=707-570&t=NFThRRhNjMhsPX5c-1](https://www.figma.com/design/WK1WXK7ULTz1zqrW1Tc6Rn/cv-rominapanzardo?node-id=347%3A39&t=D6tg0vgEzelTmFZp-1)
 
 ## Descripción del trabajo ##
 
