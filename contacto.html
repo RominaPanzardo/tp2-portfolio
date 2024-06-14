@@ -29,122 +29,47 @@
     <main id="page-contacto">
         <!--------------SECTION CONTACTO----------->
         <section id="contacto">
-            <article id="introduccion-contacto">
-                <div id="contenedor-intro">
-                    <div id="cartel-titulo">
-                        <div id="cartel-disponible">
-                            <img src="img/circulo-celeste-svg.png" alt="circulo-celeste" width="23px" height="23px">
-                            <p>disponible para trabajar</p>
-                        </div>
-                        <h2>¡Hola!</h2>
-                    </div>
-                    <img id="dos-estrellas" src="img/iconos/estrella-1.png" alt="estrellas celestes" width="215" height="222" class="scale-up-center">
+            <div id="cartel-titulo">
+                <div id="cartel-disponible">
+                    <img src="img/iconos/circulo-celeste-svg.png" alt="circulo-celeste" width="23px" height="23px">
+                    <p>disponible para trabajar</p>
                 </div>
-                <div id="cartel-y-flecha">
-                    <div id="info-contacto" class="cartel-blanco-azul">
-                        <p>Si estás interesado en trabajar juntos o quieres saber más sobre mi proceso y cómo puedo
-                            ayudar a dar vida a tus ideas, por favor, no dudes en contactarme..</p>
-                    </div>
-                    <img src="img/flecha-portfolio-hover.svg" alt="flecha abajo"> <!--animacion-->
-                </div>
-            </article>
+                <h2>¡Hola!</h2>
+            </div>
+            <img id="strella azul" src="img/iconos/estrella-azul.svg" alt="estrellas azuls" width="215" height="222"
+                class="scale-up-center">
 
 
-            <!-----reseñas---->
-            <article id="reseñas">
-                <div id="cartel-reseña-general">
-                    <h4>3 reseñas</h4>
-                    <div id="contenido-reseñas">
-                        <div id="imagenes-mascotas">
-                            <img class="imagen-circular" src="img/contacto/reseña-mascota-1.jpg"
-                                alt="imagen gato atrigrado" width="50px" height="50px">
-                            <img class="imagen-circular" src="img/contacto/reseña-mascota-2.jpg"
-                                alt="imagen gato atrigrado" width="50px" height="50px">
-                            <img class="imagen-circular" src="img/contacto/reseña-mascota-3.jpg"
-                                alt="imagen gato atrigrado" width="50px" height="50px">
-                        </div>
-                        <div id="promedio-estrellas">
-                            <img src="img/5 estrellas.svg" alt="5 estrellas">
-                            <p>promedio 5.0 entre los usuarios</p>
-                        </div>
-                    </div>
-                    <img src="img/flecha-portfolio-hover.svg" alt="">
-                </div>
-
-            </article>
+            <div id="cartel-y-flecha" class="cartel-blanco-azul">
+                <p>Si estás interesado en trabajar juntos o quieres saber más sobre mi proceso y cómo puedo
+                    ayudar a dar vida a tus ideas, por favor, no dudes en contactarme..</p>
+            </div>
         </section>
-        <section id="encuesta-mapa">
-            <article id="encuesta-contenedor">
-                <h3>Detalles del proyecto</h3>
-                <form id="encuesta" method="post" enctype="text/plain"
-                    action="mailto:rominapanzardo.dg@gmail.com?subject=Email enviado desde el formulario">
-                    <div class="columna">
-                        <div class="preguntas-encuesta">
-                            <label for="p1"> 1.Nombre</label>
-                            <input type="text" id="p1" name="p1" required>
-                        </div>
-                        <div class="preguntas-encuesta">
-                            <label for="p2"> 2.Email</label>
-                            <input type="email" id="p2" name="p2" required>
-                        </div>
-
-                        <div class="preguntas-encuesta">
-                            <label for="p3"> 3.¿Cuál es el objetivo de tu proyecto?</label>
-                            <input type="text" id="p3" name="p3">
-                        </div>
-
-                        <div class="preguntas-encuesta">
-                            <label for="p4">4.¿Cuál es la fecha límite para el proyecto?</label>
-                            <input type="date" id="p4" name="p4">
-                        </div>
-                    </div>
-                    <div class="columna">
-                        <div class="preguntas-encuesta">
-                            <label for="p5"> 5.¿Qué tipo de diseño necesitas? (Selecciona todos los que
-                                apliquen)</label>
-                            <div class="opciones-encuesta">
-                                <input type="checkbox" name="p5" id="p5a" value="Logo">
-                                <label for="p5a">Logo</label>
-                                <input type="checkbox" name="p5" id="p5b" value="Branding completo">
-                                <label for="p5b">Branding completo</label>
-                                <input type="checkbox" name="p5" id="p5c" value="Diseño Web">
-                                <label for="p5c">Diseño Web</label>
-                                <input type="checkbox" name="p5" id="p5d" value="Packaging">
-                                <label for="p5d">Packaging</label>
-                                <input type="checkbox" name="p4" id="p5e" value="Diseño Web">
-                                <label for="p5e">Diseño Web</label>
-                                <label for="p5f">Otro</label>
-                                <input type="text" id="p5f" name="p5f">
-                            </div>
-                        </div>
-
-                        <div class="preguntas-encuesta">
-                            <label for="p6">6. Insertar información relevante del proyecto o cualquier consulta que
-                                quieras
-                                hacerme.</label>
-                            <textarea name="p6" id="p6"></textarea>
-                        </div>
-
-                        <div class="preguntas-encuesta">
-                            <label for="p7">Por último, carga algún archivo si lo consideras necesario.</label>
-                            <input type="file" id="p7" name="p7">
-                        </div>
-                    </div>
-                </form>
+        <!--------formulario-------->
+        <article id="form-contenedor">
+            <form id="encuesta" method="post" enctype="text/plain"
+                action="mailto:rominapanzardo.dg@gmail.com?subject=Email enviado desde el formulario">
+                <div class="preguntas-encuesta">
+                    <label for="p1">1. Nombre</label>
+                    <input type="text" id="p1" name="p1" required>
+                </div>
+                <div class="preguntas-encuesta">
+                    <label for="p2">2. Email</label>
+                    <input type="email" id="p2" name="p2" required>
+                </div>
+                <div class="preguntas-encuesta">
+                    <label for="p3">Consulta</label>
+                    <textarea name="p3" id="p3"></textarea>
+                </div>
+                <div class="preguntas-encuesta">
+                    <label for="p7">Carga algún archivo si lo consideras necesario.</label>
+                    <input type="file" id="p7" name="p7">
+                </div>
                 <div class="contenedor-enviar">
                     <input type="submit" name="Enviar" id="Enviar" placeholder="Enviar" required>
                 </div>
-            </article>
-            <article>
-                <h3>Coordinemos!</h3>
-                <p>Utiliza el calendario a continuación para elegir una fecha y hora que teconvengan. </p>
-                <iframe
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FArgentina%2FBuenos_Aires&bgcolor=%23ffffff&hl=es&src=cm9taW5hcGFuemFyZG8uZGdAZ21haWwuY29t&src=YzhiNDUzZjU4YzdkMjhiNDI4Zjg2MjRjNzg2ZGZlNmM0MzcyZDdmZGIwNTcwNjRkMzlkZDM4OTM2ZWU2NjMwYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MmFlODIyODQ1NTA1NDc0MzcyZDFiMTZjYjkyYmZlMmQ3NDJmMzc2NzdkZmM3ODZlY2Y3NjQ0N2FjYWVlYzY3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23E67C73&color=%23009688&color=%2333B679&color=%230B8043"
-                    style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </article>
-        </section>
-        <div class="flecha-arriba"><a href="#top" id="flecha-volver" class="flechas"><img src="img/flecha-arriba.svg"
-                    alt="Volver arriba" width="21px" height="32px"></a></div>
+            </form>
+        </article>
     </main>
     <!----------FIN MAIN------------>
     <!-------footer--------->
