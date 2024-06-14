@@ -17,22 +17,78 @@ body {
     cursor: url(img/cursor-blanco.png), auto;
 }
 
+/****************************ANIMACIONES**************************/
+/*inicio*/
+/*h1*/
+.tracking-in-contract {
+    animation: tracking-in-contract-bck 5s linear;
+}
+
+@keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+/*animacion estrella*/
+@keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .scale-up-center {
+	animation: scale-up-center 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite ;
+}
+
+/*titulos h2*/
+@keyframes scale-up-hor-left {
+    0% {
+        transform: scaleX(0.4);
+        transform-origin: 0% 0%;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: 0% 0%;
+    }
+}
+
+.scale-up-hor-left {
+    animation: scale-up-hor-left 0.4s ease-in-out;
+}
+
+
+
 /****************************ESTILOS TIPOGRAFIA**************************/
 h1 {
-    color: #001AFF;
+    color: #fff;
     font-size: 8rem;
     font-weight: 900;
     line-height: 112%;
     text-transform: uppercase;
+
 }
 
 h2 {
     color: #001AFF;
     font-size: 5rem;
     font-weight: 900;
-    line-height: normal;
     text-transform: uppercase;
-    padding-bottom: 30px;
+    animation: scale-up-hor-left 0.4s ease-in-out;
 }
 
 h3 {
@@ -48,7 +104,6 @@ h4 {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 0.27rem;
-    padding-bottom: 20px;
 }
 
 h5 {
@@ -71,11 +126,15 @@ header h3 {
 }
 
 
+
+
 /****************************CURSOR**************************/
 #botones-contacto a,
-.botonera ul li a {
+.botonera ul li a, .cursor-mano {
     cursor: url(img/cursor-mano.png), auto;
 }
+
+
 
 /*************************** ESTILOS CLASS**************************/
 /*---flechas y botones---*/
@@ -121,7 +180,7 @@ header h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid var(--negro, #000);
+    border: 3px solid var(--negro, #001AFF);
 }
 
 .estrella-titulo {
@@ -205,24 +264,52 @@ nav ul li a:hover,
     padding: 30px 0px;
 }
 
-.presentación h2 {
-    color: #001AFF;
-    font-family: Inter;
+#texto-intro h2{
+    color: #FFF;
     font-size: 3rem;
-    font-style: normal;
     font-weight: 300;
-    line-height: normal;
     text-transform: uppercase;
+
 }
 
 #contenedor-portfolio {
+    background: #78B9F4;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
     padding: 50px;
-    gap: 20px;
     height: 100vh;
+    animation: tracking-in-contract-bck 5s linear;
 }
+
+#cartel-linea-intro{
+    border: 2px solid #FFF;
+    display: flex;
+    width: 80%;
+    height: 5%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cartel-linea-intro h3{
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+
+
+#division-intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    
+}
+
 
 /*******************************************************INDEX***********************************************/
 /*------------------section sobremi----------------------*/
@@ -269,18 +356,24 @@ nav ul li a:hover,
 }
 
 /*-------------------section habilidades-------------------*/
-#habilidades-aside {
+#habilidades {
+    display: flex;
+    align-items: center;
     height: 100vh;
-    padding: 30px 80px;
-    gap: 30px;
+ 
+}
+
+#habilidades-aside {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
 }
 
 
-#recuadro-habilidades {
+#contenedor-habilidades{
+    display: flex;
     gap: 20px;
+    flex-direction: column;
 }
 
 .contenedor-programas {
@@ -288,10 +381,9 @@ nav ul li a:hover,
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 30px;
     border: 3px solid #01003F;
-    background: #FFF;
 }
 
 .programas {
@@ -340,22 +432,18 @@ aside {
 
 #index-contacto h2 {
     color: #FFF;
-    font-family: Inter;
     font-size: 8rem;
-    font-style: normal;
     font-weight: 400;
     letter-spacing: 1rem;
 }
 
 #index-contacto h2:hover {
     color: #FFF;
-    font-family: Inter;
     font-size: 8rem;
     font-style: italic;
     font-weight: 900;
-    line-height: normal;
     letter-spacing: 0.5rem;
-    transition: 4s;
+    transition: 2s;
 }
 
 /*FIN INDEX*/
@@ -386,6 +474,7 @@ aside {
     border-bottom: 3px solid #01003F;
     cursor: url(img/cursor-mano-azul.png), auto;
     position: relative;
+    animation: scale-up-hor-left 0.4s ease-in-out;
 }
 
 .botones-portfolio:hover {
@@ -423,7 +512,7 @@ aside {
     transform: translate(100%, 0%);
     width: 700px;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+
 }
 
 /* HOVERS IMÁGENES- cambia según el botón */
@@ -454,10 +543,10 @@ aside {
 
 /*--------------------seccion de tps-------------*/
 
-.contenedor-trabajos{
+.contenedor-trabajos {
     display: flex;
     justify-content: center;
-    min-height: 100vh; 
+    min-height: 100vh;
     padding: 30px;
 }
 
@@ -475,7 +564,8 @@ aside {
 }
 
 .recuadro-trabajos::-webkit-scrollbar-thumb {
-    background: #01003F;;
+    background: #01003F;
+    ;
     border-radius: 10px;
 }
 
@@ -499,12 +589,12 @@ aside {
     border-bottom: 3px solid #0026ff;
 }
 
-.titulos-trabajos h4{
+.titulos-trabajos h4 {
     font-size: 4rem;
     margin-bottom: 0;
 }
 
-.explicacion-trabajo{
+.explicacion-trabajo {
     padding: 20px 0px;
     gap: 20px;
     display: flex;
@@ -512,7 +602,7 @@ aside {
     justify-content: space-between;
 }
 
-.contenedor-info{
+.contenedor-info {
     color: #001AFF;
     border: 2px solid #001AFF;
     width: 200px;
@@ -523,11 +613,11 @@ aside {
     font-size: 0.8rem;
 }
 
-.imagenes-grid{
+.imagenes-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    
+
     gap: 15px;
 }
 
@@ -797,6 +887,8 @@ form .columna {
     font-size: 0.8rem;
     font-weight: 700;
 }
+
+
 
 
 /****************************MEDIA QUERIES**************************/
