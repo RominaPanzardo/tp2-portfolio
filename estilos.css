@@ -234,7 +234,6 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-
 }
 
 .botones {
@@ -263,8 +262,23 @@ nav ul li a:hover,
 
 }
 
-.logo:hover{
-    background-image: url(img/iconos/logo-hover.svg), auto;
+
+
+#logo:hover {
+    width: 50px;
+    animation: rotate-vert-center 0.2s forwards;
+    content: url('img/iconos/logo-nav-hover.svg');
+}
+
+/* Definir animación de rotación */
+@keyframes rotate-vert-center {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 /*--------------------presentacion-------------------*/
@@ -472,7 +486,11 @@ aside {
 .portfolio {
     height: 100vh;
     padding: 50px 80px;
+    display: flex;
     position: relative;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 #opciones-portfolio {
@@ -928,8 +946,9 @@ textarea {
 
 /****************************MEDIA QUERIES**************************/
 @media screen and (max-width: 600px) {
+
     h1 {
-        font-size: 6rem
+        font-size: 8rem
     }
 
     h2 {
@@ -938,7 +957,7 @@ textarea {
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     h4 {
@@ -950,98 +969,137 @@ textarea {
     }
 
 
-    body {
-        padding: 0px 20px;
+    header h3 {
+        font-size: 2rem;
     }
 
-
-    /*footer*/
-    .contenedor-footer {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    /*--------------1-index--------------*/
-    /*header*/
-
-    nav {
-        opacity: 0;
+    .ocultar-en-responsive {
+        display: none;
     }
 
     #contenedor-portfolio {
-        display: flex;
-        gap: 20px;
-        padding: 0px;
-        height: 100vh;
-        flex-direction: column;
-        margin: 20px;
-
+        padding: 20px;
+        height: auto;
     }
 
-    .presentación {
+    #cartel-linea-intro {
         width: 100%;
-    }
-
-    .presentación h2 {
-        font-size: 2.5rem;
-    }
-
-    /*main---sobre mi----*/
-    main {
-        margin: 20px;
-    }
-
-    #intro-sobre-mi {
-        flex-direction: column-reverse;
-        align-items: stretch;
-        gap: 30px;
-    }
-
-    #contenedor-imagen {
-        width: auto;
-        height: 400px;
-    }
-
-    #estrella-inferior-izquierda,
-    #estrella-superior-derecha {
-        opacity: 0;
-    }
-
-    /*habilidades*/
-    #habilidades-aside {
-        flex-direction: column;
-    }
-
-    #index-contacto {
-        flex-direction: column;
-        height: 220px;
-    }
-
-    #index-contacto h2 {
-        font-size: 3.6rem;
-    }
-
-    .flecha-arriba {
-        opacity: 0;
-    }
-
-    /*--------------2-trabajos--------------*/
-    /*--------------3-hobbies--------------*/
-    /*--------------3.2-galeria--------------*/
-    .galeria-fotos {
-        grid-template-columns: repeat(2, 0fr);
-        justify-content: space-evenly;
-    }
-
-    .light-box {
-        gap: 0;
         padding: 10px;
     }
 
-    .contenedor-galeria-botones {
-        width: 550px;
+    #division-intro {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
     }
 
-    /*--------------4.contacto--------------*/
+    #texto-intro h1,
+    #texto-intro h2 {
+        font-size: 1.5rem;
+    }
 
+    #imagen-hover-intro {
+        width: 50px;
+        height: 50px;
+    }
+
+    #intro-sobre-mi {
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+
+    #recuadro-estrellas {
+        width: 100%;
+    }
+
+    #contenedor-imagen {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    #habilidades {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    #habilidades-aside {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contenedor-programas {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .programas {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    aside {
+        padding: 20px;
+    }
+
+    #contenedor-favoritos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #index-contacto {
+        height: auto;
+        padding: 20px;
+    }
+
+    #index-contacto h3 {
+        font-size: 3rem;
+    }
+
+    .ocultar-en-responsive {
+        display: none;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .boton-individual {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #flecha-volver {
+        display: none;
+    }
 }
+
+
+/*--------------2-trabajos--------------*/
+/*--------------3-hobbies--------------*/
+/*--------------3.2-galeria--------------*/
+.galeria-fotos {
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: space-evenly;
+}
+
+.light-box {
+    gap: 0;
+    padding: 10px;
+}
+
+.contenedor-galeria-botones {
+    width: 550px;
+}
+
+/*--------------4.contacto--------------*/
